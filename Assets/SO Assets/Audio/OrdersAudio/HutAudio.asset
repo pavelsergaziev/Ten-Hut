@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944dbd03e9b3bc94fb2fd89bb9b4f6b2, type: 3}
+  m_Name: HutAudio
+  m_EditorClassIdentifier: 
+  _audioClips:
+  - {fileID: 8300000, guid: 9c1b78ab1ec680444ba7c46a72ff3047, type: 3}
+  - {fileID: 8300000, guid: 26a640a863b75084f8a86a3c1fd8e1bc, type: 3}
+  - {fileID: 8300000, guid: 393e28d768c59794db362dba03af1fd1, type: 3}
+  - {fileID: 8300000, guid: cbc0a355eaa2fad4aa3683d5b9da146c, type: 3}
+  - {fileID: 8300000, guid: e8f029e734d71cc4daa1da97033def39, type: 3}
+  - {fileID: 8300000, guid: 19d8d49c1ff06b54db8cfe0e15246e2a, type: 3}
+  - {fileID: 8300000, guid: 850c0bc446a6dec4ca790b60f7dbd3b1, type: 3}
+  - {fileID: 8300000, guid: a7410b9114182694d8a1befff3f2c704, type: 3}
+  - {fileID: 8300000, guid: b70f0ff161f56c1418ce2fdc7f3caa4d, type: 3}
+  - {fileID: 8300000, guid: 06fd4f49330f9be4ea9c1fec63ab31cd, type: 3}

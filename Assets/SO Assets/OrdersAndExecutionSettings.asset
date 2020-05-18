@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287cc43d7d1182643baf9c80b8f986bd, type: 3}
+  m_Name: OrdersAndExecutionSettings
+  m_EditorClassIdentifier: 
+  _orders:
+  - {fileID: 11400000, guid: 8d7bba98b1c2fcc4cb0578c64aefea22, type: 2}
+  - {fileID: 11400000, guid: 3e2759888a0501247b8b8d40e5e8d34c, type: 2}
+  - {fileID: 11400000, guid: a8c63271836fe5349b269cf34a679607, type: 2}
+  - {fileID: 11400000, guid: 5e14072ab8ba9cc45b033c6db97f9342, type: 2}
+  _initialDelayBetweenOrders: 2
+  _difficultyDelayBetweenOrdersIncrement: 1.25
+  _initialOrdersInSequenceCount: 3
+  _difficultyOrdersInSequenceIncrementMin: 0
+  _difficultyOrdersInSequenceIncrementMax: 2
+  _attenIntermissionProbabilityIncrement: 8
+  _initialVoiceSpeed: 0.8
+  _maxVoicePitchDeviation: 0.04
+  _difficultyVoiceSpeedIncrement: 0.09
+  _attenIntermissionsAudioClips: {fileID: 11400000, guid: c95faa3f5d65f4445980ee97236b635b,
+    type: 2}
+  _amountOfWrongMovesToEndGame: 3

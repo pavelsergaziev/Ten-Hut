@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MAIN.unity
+    guid: 1d08666fc7ff49e4281472faba02e19e
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 947fc2f6cab15cb4e9ed636e014fe5ba
+  - enabled: 1
+    path: Assets/Scenes/GameOverWindow.unity
+    guid: 6f46e93e315d206409316626c7978bc4
+  - enabled: 1
+    path: Assets/Scenes/Soldier.unity
+    guid: 31c5ab0fc0ff6e3438f5149ff62dcc77
+  - enabled: 1
+    path: Assets/Scenes/SergeantPanel.unity
+    guid: 80aa5b7533446b64584a66623662a46e
+  - enabled: 1
+    path: Assets/Scenes/SergeantAudio.unity
+    guid: e49e5ae3cd2d3c542bcc5de6d61c1373
+  - enabled: 1
+    path: Assets/Scenes/ScorePanel.unity
+    guid: b6c26a2e8b34f7546819b424e8f337c3
+  - enabled: 1
+    path: Assets/Scenes/HealthPanel.unity
+    guid: 9899579d3a75b7d4ab18ca28b46ce069
+  - enabled: 1
+    path: Assets/Scenes/AudioFX.unity
+    guid: 26e4953a957e690429f4c53acd831e99
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  m_configObjects: {}

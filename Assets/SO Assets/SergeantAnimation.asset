@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7bff24de1a28d4891ac582652f0a13, type: 3}
+  m_Name: SergeantAnimation
+  m_EditorClassIdentifier: 
+  _idleSprite: {fileID: 21300000, guid: 9dc78d21f32106b4aada2a1d53289e30, type: 3}
+  _animationSpritesSequenced:
+  - {fileID: 21300000, guid: 5466325432433e242bfacaaf31d88dd5, type: 3}
+  - {fileID: 21300000, guid: 9fe516aeafef2584cb0a047471e3588d, type: 3}
+  _animationFrameChangeDelay: 0.1

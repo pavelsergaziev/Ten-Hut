@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b189eca6f2515b44ad68a469ed0cf9c, type: 3}
+  m_Name: AllSettings
+  m_EditorClassIdentifier: 
+  _ordersAndExecutionSettings: {fileID: 11400000, guid: 21d10f40282da214e9aaa9b6ed49ef94,
+    type: 2}
+  _highScoreSettings: {fileID: 11400000, guid: 1e1f9c6fa6a58d84ab52f45af71c4c0e, type: 2}
+  _scoreCountingSettings: {fileID: 11400000, guid: cae3f4957bda8e040b305449e78fdb5b,
+    type: 2}
+  _sceneLoadingSettings: {fileID: 11400000, guid: 85caea46a801fd340ae6b0d21ec538ce,
+    type: 2}
+  _commonAudioFXSettings: {fileID: 11400000, guid: 1c81d9d474f93b14591245a21911f39b,
+    type: 2}
+  _soldierAnimations: {fileID: 11400000, guid: ea22a0f22384dfc4fa81eaa25fe25c5c, type: 2}
+  _sergeantAnimation: {fileID: 11400000, guid: 0839f0bcf8f08ec47832f5ea0a3112f5, type: 2}
+  _menusAnimationSettings: {fileID: 11400000, guid: f0734d55d44251e4b9fe2fdb88bf8c19,
+    type: 2}
+  _uIShakeSettings: {fileID: 11400000, guid: 30ff79edda6b8814194a38d8dc34228c, type: 2}
+  _healthPanelSettings: {fileID: 11400000, guid: 19077c81a2e62324291608ca0c1d7cb6,
+    type: 2}

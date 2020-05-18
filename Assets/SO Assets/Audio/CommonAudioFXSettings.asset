@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82dab7da04bb2584ebaf2b6e00a7fd07, type: 3}
+  m_Name: CommonAudioFXSettings
+  m_EditorClassIdentifier: 
+  _audioFXDictionary: {fileID: 11400000, guid: ac1b8d5804a31f347bc900be137bfb31, type: 2}
+  _maxPitchDeviation: 0.07

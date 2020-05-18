@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944dbd03e9b3bc94fb2fd89bb9b4f6b2, type: 3}
+  m_Name: TenAudio
+  m_EditorClassIdentifier: 
+  _audioClips:
+  - {fileID: 8300000, guid: 1513f18f5db17994fa98438ce17a9abe, type: 3}
+  - {fileID: 8300000, guid: c6c40be178635b641a6d610d2cfa0283, type: 3}
+  - {fileID: 8300000, guid: 235cf9116dc135a4e83385b4f9e1c87c, type: 3}
+  - {fileID: 8300000, guid: f811c6e1d3a85a342878cace8659c1c1, type: 3}
+  - {fileID: 8300000, guid: 00662c32683ffdf4cb194b98a5fe203a, type: 3}
+  - {fileID: 8300000, guid: e43aa4b1998309d41847302b39df0ad6, type: 3}
+  - {fileID: 8300000, guid: af65b6b253d53de4b97dabfc85839593, type: 3}
+  - {fileID: 8300000, guid: baca26b87db67bc48843673edfa6fcfe, type: 3}
+  - {fileID: 8300000, guid: 3bed267d4dca1284894d06fbad2867b5, type: 3}
+  - {fileID: 8300000, guid: 8bf33849b886b1a4ca78d108bd050803, type: 3}
+  - {fileID: 8300000, guid: fa6919234b693094a9f174cd0a08465c, type: 3}
+  - {fileID: 8300000, guid: 98ccfa1f38597cd41a74cb900c64c0a7, type: 3}
+  - {fileID: 8300000, guid: 111348d3c7578ee4292b58a1b95924c4, type: 3}
+  - {fileID: 8300000, guid: 97d3b76caa44cbb4e92551d77ebd3238, type: 3}

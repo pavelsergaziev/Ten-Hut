@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944dbd03e9b3bc94fb2fd89bb9b4f6b2, type: 3}
+  m_Name: SoldierMoveAudio
+  m_EditorClassIdentifier: 
+  _audioClips:
+  - {fileID: 8300000, guid: bb85dcb060ac4374992355c094daf395, type: 3}
+  - {fileID: 8300000, guid: 815d899046ec1e54886d8133a5d8fb33, type: 3}
+  - {fileID: 8300000, guid: c3f32d3bb348da34f946b3a2d7dafdf6, type: 3}
+  - {fileID: 8300000, guid: 432cb3c41d853a741b9c7de27fc42625, type: 3}
+  - {fileID: 8300000, guid: 9383660de9c7549439dd624ed17fed42, type: 3}
+  - {fileID: 8300000, guid: 47ab8eb7a81a7bc438b47ed77a9885c0, type: 3}
