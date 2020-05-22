@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffaeeb38abacbc4aa50d0e41efc6a5e, type: 3}
   m_Name: CommonAudioFXDictionary
   m_EditorClassIdentifier: 
-  _keys: 010000000200000003000000
+  _keys: 010000000300000002000000
   _values:
   - {fileID: 11400000, guid: 90fd0816305bcd74db9270d15f09aa08, type: 2}
-  - {fileID: 11400000, guid: b9fb103b8670135409feafad7f49d16a, type: 2}
   - {fileID: 11400000, guid: 9ed3cf02820986b469d7c175d3a2dd66, type: 2}
+  - {fileID: 11400000, guid: b9fb103b8670135409feafad7f49d16a, type: 2}
