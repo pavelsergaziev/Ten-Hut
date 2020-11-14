@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LanguagesAndTexts;
 
 using OrdersAndExecution;
 using System;
@@ -13,6 +14,9 @@ public class GameStateController: IDependencyInjectionReceiver
     private OrdersAndExecutionGameLoopController _gameplayLoopController;
     private UIButtonEffectsController _uIButtonEffectsController;
     private ScoreController _scoreController;
+    private OptionsInitialStateController _optionsSaver;
+    private LanguageController _languageController;
+    private AudioMixerController _audioController;
 
     public GameStateController()
     {        
@@ -21,19 +25,21 @@ public class GameStateController: IDependencyInjectionReceiver
 
     public void InjectDependencies()
     {
+        _languageController = Main.Instance.LanguageController;
         _gameplayLoopController = Main.Instance.OrdersAndExecutionGameLoop;
         _sceneLoader = Main.Instance.SceneLoader;
         _uIButtonEffectsController = Main.Instance.UIButtonEffectsController;
+        _optionsSaver = Main.Instance.OptionsInitialStateController;
         _scoreController = Main.Instance.ScoreController;
+        _audioController = Main.Instance.AudioMixerController;
 
         _uIButtonEffectsController.OnButtonPressed += ResolveButtonPressed;
-
-        EnterInitialGameState();
     }
 
-    private void EnterInitialGameState()
-    {        
-        LoadMainMenu();
+    public void EnterInitialGameState()
+    {
+        SetInitialOptionsSettings();
+        LoadIntroScreen();
     }
 
     private void ResolveButtonPressed(MenuButtons button)
@@ -43,7 +49,7 @@ public class GameStateController: IDependencyInjectionReceiver
             LoadGameplay();
         }
 
-        if (button == MenuButtons.ReturnToPreviousScreen && _currentGameState == Scenes.gameoverScreen)
+        if(button == MenuButtons.ReturnToMainMenu && _currentGameState != Scenes.mainMenu)
         {
             LoadMainMenu();
         }
@@ -52,6 +58,19 @@ public class GameStateController: IDependencyInjectionReceiver
         {
             Application.Quit();
         }
+    }
+
+    private void SetInitialOptionsSettings()
+    {
+        _optionsSaver.SetValuesFromSOIfFirstLaunch();
+        _languageController.SetLanguageOnGameStart();
+        _audioController.SetInitialAudioMixerSettings();
+    }
+
+    private void LoadIntroScreen()
+    {
+        _currentGameState = Scenes.introScreen;
+        LoadScenesPack();
     }
 
     private void LoadMainMenu()

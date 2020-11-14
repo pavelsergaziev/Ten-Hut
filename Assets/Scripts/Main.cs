@@ -1,4 +1,16 @@
-﻿using System.Collections.Generic;
+﻿//TODO:
+//+ сделать активацию/деактивацию панелей главного меню
+//+ название игры (отдельная вступительная сцена)
+//+ мобильная версия:
+    //+ ввод команд через свайпы
+    //+ инструкция про ввод - про свайпы
+//+ поправить тексты (воскл. знаки, отступы, русские варианты приказов)
+//- иконка приложения
+//- гуглплей
+
+
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -12,6 +24,10 @@ public class Main : MonoBehaviour
 
     public Updater Updater { get; private set; }
     public SceneLoadingController SceneLoader { get; private set; }
+    public LanguagesAndTexts.LanguageController LanguageController { get; private set; }
+    public LanguagesAndTexts.LanguageDependentTextsController LanguageDependentTextsController { get; private set; }
+
+    public OptionsInitialStateController OptionsInitialStateController { get; private set; }
 
     public PlayerInput.IPlayerInput PlayerInputController { get; private set; }        
     public GameStateController GameStateController { get; private set; }
@@ -23,7 +39,9 @@ public class Main : MonoBehaviour
     public DrillSergeantController DrillSergeantController { get; private set; }
     public SergeantAnimationController SergeantAnimationController { get; private set; }
     public SoldierAnimationController SoldierAnimationController { get; private set; }
+    public AudioMixerController AudioMixerController { get; private set; }
     public AudioFXDispatcherController CommonAudioFXDispatcher { get; private set; }
+    public SoundTestController SoundTestController { get; private set; }
     public AudioFXPlayerController SergeantAudioFXController { get; private set; }
     public AudioFXPlayerController CommonAudioFXController { get; private set; }
     public ScoreController ScoreController { get; private set; }
@@ -45,6 +63,7 @@ public class Main : MonoBehaviour
     private void Start()
     {
         InjectDependencies();
+        EnterInitialGameState();
     }
 
     private void CreateSingleton()
@@ -68,7 +87,12 @@ public class Main : MonoBehaviour
     private void CreateNonMonobehaviorControllers()
     {
         SceneLoader = new SceneLoadingController();
+        LanguageController = new LanguagesAndTexts.LanguageController();
+        LanguageDependentTextsController = new LanguagesAndTexts.LanguageDependentTextsController();
+        OptionsInitialStateController = new OptionsInitialStateController();
         GameStateController = new GameStateController();
+        AudioMixerController = new AudioMixerController();
+        SoundTestController = new SoundTestController();
         CommonAudioFXController = new AudioFXPlayerController();
         CommonAudioFXDispatcher = new AudioFXDispatcherController();
         UIButtonEffectsController = new UIButtonEffectsController();
@@ -80,7 +104,7 @@ public class Main : MonoBehaviour
         PlayerInputController = new PlayerInput.PlayerInputController_Keyboard();
 #endif
 #if UNITY_ANDROID
-        //PlayerInput = new PlayerInput.PlayerInputController_Mobile();
+        PlayerInputController = new PlayerInput.PlayerInputController_Touch();
 #endif
 
         PlayerActionsController = new OrdersAndExecution.PlayerActionsInputController();
@@ -107,4 +131,9 @@ public class Main : MonoBehaviour
         }
     }
 
+
+    private void EnterInitialGameState()
+    {
+        GameStateController.EnterInitialGameState();
+    }
 }

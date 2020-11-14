@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015e16fc7d17ea546822d7af36fa2acf, type: 3}
+  m_Name: AudioMixersDictionarySO
+  m_EditorClassIdentifier: 
+  _keys: 0000000001000000
+  _values:
+  - {fileID: -6495774437851009461, guid: cb2daee0e1a79894fa57e8bbda07a729, type: 2}
+  - {fileID: 7261337373517889552, guid: cb2daee0e1a79894fa57e8bbda07a729, type: 2}

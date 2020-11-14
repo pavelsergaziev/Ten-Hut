@@ -23,8 +23,15 @@ MonoBehaviour:
     type: 2}
   _soldierAnimations: {fileID: 11400000, guid: ea22a0f22384dfc4fa81eaa25fe25c5c, type: 2}
   _sergeantAnimation: {fileID: 11400000, guid: 0839f0bcf8f08ec47832f5ea0a3112f5, type: 2}
+  _introPanelAnimationSO: {fileID: 11400000, guid: 1cab226db182d2c4385725036b191530,
+    type: 2}
   _menusAnimationSettings: {fileID: 11400000, guid: f0734d55d44251e4b9fe2fdb88bf8c19,
     type: 2}
   _uIShakeSettings: {fileID: 11400000, guid: 30ff79edda6b8814194a38d8dc34228c, type: 2}
   _healthPanelSettings: {fileID: 11400000, guid: 19077c81a2e62324291608ca0c1d7cb6,
     type: 2}
+  _languagesDictionary: {fileID: 11400000, guid: 37594caec5aedd544acd9539e9612f6d,
+    type: 2}
+  _audioMixersAllSettingsSO: {fileID: 11400000, guid: 59223fe88e0ab024fa8b3f3e8c35edf4,
+    type: 2}
+  _audioTestSoundsSO: {fileID: 11400000, guid: 5886bf81dfc4ad4428fd58f11ea29ec0, type: 2}

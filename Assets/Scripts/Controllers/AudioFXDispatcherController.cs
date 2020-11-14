@@ -69,6 +69,6 @@ public class AudioFXDispatcherController: IDependencyInjectionReceiver
             _previousAudioFXType = audioFXtype;
         }
 
-        _audioFXController.PlayAudioClip(_audioClips[_currentAudioClipIndex], pitch);        
+        _audioFXController.PlayAudioClip(_audioClips[_currentAudioClipIndex], pitch);
     }
 }

@@ -28,7 +28,7 @@ PrefabInstance:
     - target: {fileID: 670619513281285929, guid: 54156f94c2b4ded48be579624c0ad4a3,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 670619513281285929, guid: 54156f94c2b4ded48be579624c0ad4a3,
         type: 3}
@@ -48,7 +48,7 @@ PrefabInstance:
     - target: {fileID: 670619513281285929, guid: 54156f94c2b4ded48be579624c0ad4a3,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 670619513300390380, guid: 54156f94c2b4ded48be579624c0ad4a3,
         type: 3}

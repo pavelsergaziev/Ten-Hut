@@ -25,6 +25,10 @@ public class MainMenuButtonsMono : MonoBehaviour
     {
         ButtonWasPressed(MenuButtons.HowToPlay);
     }
+    public void OptionsButtonWasPressed()
+    {
+        ButtonWasPressed(MenuButtons.Options);
+    }
     public void HighScoreButtonPressed()
     {
         ButtonWasPressed(MenuButtons.HighScore);
@@ -39,7 +43,7 @@ public class MainMenuButtonsMono : MonoBehaviour
     }
     public void ReturnToMainMenuButtonPressed()
     {
-        ButtonWasPressed(MenuButtons.ReturnToPreviousScreen);
+        ButtonWasPressed(MenuButtons.ReturnToMainMenu);
     }
 }
 

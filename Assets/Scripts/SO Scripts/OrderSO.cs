@@ -8,14 +8,12 @@ namespace OrdersAndExecution
     [CreateAssetMenu(fileName = "Order", menuName = "GameScriptableObjectsAsset/Order")]
     public class OrderSO : ScriptableObject
     {
-        [SerializeField] private string _orderText;
-        public string OrderText { get { return _orderText; } }
 
         [SerializeField] private AudioClipsArraySO _orderAudioClips;
         public AudioClipsArraySO OrderAudioClips { get { return _orderAudioClips; } }
 
-        [SerializeField] private OrdersAndActions _targetPlayerAction;
-        public OrdersAndActions TargetPlayerAction { get { return _targetPlayerAction; } }
+        [SerializeField] private OrdersAndActions _order;
+        public OrdersAndActions Order { get { return _order; } }
 
         [Tooltip("Сколько раз может повторяться подряд")]
         [Range(1,10)]

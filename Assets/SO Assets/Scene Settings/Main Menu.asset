@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219c15fca7d298a4d9f75d5e91968392, type: 3}
   m_Name: Main Menu
   m_EditorClassIdentifier: 
-  _scenesRequired: 0100000008000000
-  _unloadAllNonEssintialScenes: 1
+  _scenesRequired: 010000000500000008000000
+  _unloadAllNonEssentialScenes: 1

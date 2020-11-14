@@ -166,10 +166,10 @@ namespace OrdersAndExecution
 
             _soldierAnimation.RequestReturnToNonHutPosition();
 
-            if (_currentOrder.TargetPlayerAction == _currentPlayerAction
+            if (_currentOrder.Order == _currentPlayerAction
                 ||
                 (
-                    _currentOrder.TargetPlayerAction == OrdersAndActions.ten
+                    _currentOrder.Order == OrdersAndActions.ten
                     && !_playerHasAlreadyActed
                 ))
             {                
@@ -225,7 +225,7 @@ namespace OrdersAndExecution
                 _currentPlayerAction = _playerInput.CurrentInputAction;
                 _playerHasAlreadyActed = true;
 
-                if (_state == State.inAttenIntermission || _currentPlayerAction != _currentOrder.TargetPlayerAction)
+                if (_state == State.inAttenIntermission || _currentPlayerAction != _currentOrder.Order)
                 {
                     _currentPlayerAction = OrdersAndActions.wrong;
                     OrderWasExecutedWrong();

@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "ASceneLoadingSettings", menuName = "GameScriptableObjectsAsset/SceneLoadingSettings")]
+[CreateAssetMenu(fileName = "SceneLoadingSettings", menuName = "GameScriptableObjectsAsset/SceneLoadingSettings")]
 public class SceneLoadingSettingsSO : ScriptableObject
 {
     [SerializeField] private int[] _scenesRequired;
-    [SerializeField] private bool _unloadAllNonEssintialScenes;
+    [SerializeField] private bool _unloadAllNonEssentialScenes;
 
     public int[] ScenesRequired { get { return _scenesRequired; } }
-    public bool UnloadAllNonEssentialScenes { get { return _unloadAllNonEssintialScenes; } }
+    public bool UnloadAllNonEssentialScenes { get { return _unloadAllNonEssentialScenes; } }
 }

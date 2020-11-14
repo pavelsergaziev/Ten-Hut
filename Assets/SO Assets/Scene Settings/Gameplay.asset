@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Gameplay
   m_EditorClassIdentifier: 
   _scenesRequired: 030000000400000005000000060000000700000008000000
-  _unloadAllNonEssintialScenes: 1
+  _unloadAllNonEssentialScenes: 1

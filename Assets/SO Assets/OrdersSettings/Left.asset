@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea67ddf9cd67d849b90b9cd5339bdc3, type: 3}
   m_Name: Left
   m_EditorClassIdentifier: 
-  _orderText: Left!
   _orderAudioClips: {fileID: 11400000, guid: 4fc7d1a9bd068774ea21a447bf211d0a, type: 2}
-  _targetPlayerAction: 5
+  _order: 5
   _maxIssuedConsecutively: 4

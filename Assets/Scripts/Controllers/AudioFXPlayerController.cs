@@ -15,4 +15,10 @@ public class AudioFXPlayerController
     {
         OnAudioClipPlayRequest.Invoke(audioClip, pitch);
     }
+
+    public AudioFXPlayerController PlayAudioClipReturnController(AudioClip audioClip, float pitch)
+    {
+        OnAudioClipPlayRequest.Invoke(audioClip, pitch);
+        return this;
+    }
 }

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445bc35896a619949884601867c79301, type: 3}
+  m_Name: Russian
+  m_EditorClassIdentifier: 
+  _texts: {fileID: 4900000, guid: f2f593e803a7431448dc7c9c35e98abd, type: 3}
+  _font: {fileID: 12800000, guid: 5434ff73233a80d4ebe349444ef5ff45, type: 3}
+  _fontAsset: {fileID: 11400000, guid: 02f0c972ac853834584fdce6f1ac6c5d, type: 2}

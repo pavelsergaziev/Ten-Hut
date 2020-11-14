@@ -2,8 +2,16 @@
 {
     StartGame,
     HowToPlay,
+    Options,
     HighScore,
     Credits,
     ExitGame,
-    ReturnToPreviousScreen
+    ReturnToMainMenu,
+    ChangeLanguageToNext,
+    ChangeLanguageToPrev,
+    IncreaseFXVolume,
+    DecreaseFXVolume,
+    IncreaseSpeechVolume,
+    DecreaseSpeechVolume,
+    TestSound
 }

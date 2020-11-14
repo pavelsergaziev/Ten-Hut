@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: OrdersAndExecutionSettings
   m_EditorClassIdentifier: 
   _orders:
-  - {fileID: 11400000, guid: 8d7bba98b1c2fcc4cb0578c64aefea22, type: 2}
-  - {fileID: 11400000, guid: 3e2759888a0501247b8b8d40e5e8d34c, type: 2}
-  - {fileID: 11400000, guid: a8c63271836fe5349b269cf34a679607, type: 2}
-  - {fileID: 11400000, guid: 5e14072ab8ba9cc45b033c6db97f9342, type: 2}
+  - {fileID: 11400000, guid: 27bf3119cde6e6e429c41fb0e0aed50d, type: 2}
+  - {fileID: 11400000, guid: b6a20e79ba9a26d4a968c0d68f38391f, type: 2}
+  - {fileID: 11400000, guid: d5b4a463928dfa349a7a70b51f6dc450, type: 2}
+  - {fileID: 11400000, guid: d0f408ea7b80b194ab1c122156db63af, type: 2}
   _initialDelayBetweenOrders: 2
   _difficultyDelayBetweenOrdersIncrement: 1.25
   _initialOrdersInSequenceCount: 3
@@ -25,7 +25,7 @@ MonoBehaviour:
   _attenIntermissionProbabilityIncrement: 8
   _initialVoiceSpeed: 0.8
   _maxVoicePitchDeviation: 0.04
-  _difficultyVoiceSpeedIncrement: 0.09
+  _difficultyVoiceSpeedIncrement: 0.07
   _attenIntermissionsAudioClips: {fileID: 11400000, guid: c95faa3f5d65f4445980ee97236b635b,
     type: 2}
   _amountOfWrongMovesToEndGame: 3

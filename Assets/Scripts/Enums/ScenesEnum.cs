@@ -1,2 +1,2 @@
 ﻿
-public enum Scenes { mainMenu, gameplay, gameoverScreen }
+public enum Scenes { introScreen, mainMenu, gameplay, gameoverScreen }

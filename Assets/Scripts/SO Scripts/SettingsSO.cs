@@ -34,6 +34,10 @@ public class SettingsSO : ScriptableObject
     public SergeantAnimationSettngsSO SergeantAnimation { get { return _sergeantAnimation; } }
 
     [SerializeField]
+    private IntroPanelAnimationSO _introPanelAnimationSO;
+    public IntroPanelAnimationSO IntroPanelAnimationSO { get { return _introPanelAnimationSO; } }
+
+    [SerializeField]
     private MenusAnimationSettingsSO _menusAnimationSettings;
     public MenusAnimationSettingsSO MenusAnimationSettings { get { return _menusAnimationSettings; } }
 
@@ -44,4 +48,16 @@ public class SettingsSO : ScriptableObject
     [SerializeField]
     private HealthPanelSettingsSO _healthPanelSettings;
     public HealthPanelSettingsSO HealthPanelSettings { get { return _healthPanelSettings; } }
+
+    [SerializeField]
+    private LanguagesDictionarySO _languagesDictionary;
+    public LanguagesDictionarySO LanguagesDictionary { get { return _languagesDictionary; } }
+
+    [SerializeField]
+    private AudioMixersAllSettingsSO _audioMixersAllSettingsSO;
+    public AudioMixersAllSettingsSO AudioMixersAllSettingsSO { get { return _audioMixersAllSettingsSO; } }
+
+    [SerializeField]
+    private AudioTestSoundsSO _audioTestSoundsSO;
+    public AudioTestSoundsSO AudioTestSoundsSO { get { return _audioTestSoundsSO; } }
 }

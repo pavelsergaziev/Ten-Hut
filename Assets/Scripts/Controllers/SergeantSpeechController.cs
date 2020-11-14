@@ -49,9 +49,8 @@ public class SergeantSpeechController : IDependencyInjectionReceiver
         }
         else
         {
-            _audioController.PlayAudioClip(GetRandomAudioClip(audioClips), GetRandomPitch());
+            _audioController.PlayAudioClipReturnController(GetRandomAudioClip(audioClips), GetRandomPitch()).OnAudioClipEnded += ResolveLineAudioClipEnded;
             OnSayLineRequested.Invoke(text);
-            _audioController.OnAudioClipEnded += ResolveLineAudioClipEnded;
         }
     }
 

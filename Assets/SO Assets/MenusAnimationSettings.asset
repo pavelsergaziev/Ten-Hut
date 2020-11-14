@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f809c89b3d89cdf4b8bc4cf7816de435, type: 3}
   m_Name: MenusAnimationSettings
   m_EditorClassIdentifier: 
-  _movementDuration: 0.3
+  _movementDuration: 0.5

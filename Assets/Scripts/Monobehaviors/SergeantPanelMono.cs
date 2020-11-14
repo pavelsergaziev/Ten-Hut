@@ -2,6 +2,9 @@
 using UnityEngine;
 using TMPro;
 
+using LanguagesAndTexts;
+using System;
+
 public class SergeantPanelMono : MonoBehaviour
 {
     [SerializeField]
@@ -14,6 +17,7 @@ public class SergeantPanelMono : MonoBehaviour
     private float _letterPrintingDelay;
 
     private SergeantSpeechController _speechController;
+    private LanguageDependentTextsController _fontSource;
 
     private string _currentText;
     private int _nextCharIndex;
@@ -24,6 +28,16 @@ public class SergeantPanelMono : MonoBehaviour
 
         _speechController.OnSayLineRequested += PrintFullText;
         _speechController.OnSpeechLetterByLetterStarted += StartPrintingSequence;
+
+        _fontSource = Main.Instance.LanguageDependentTextsController;
+        _fontSource.OnTextsChanged += ChangeFont;
+
+        ChangeFont(_fontSource.Texts, _fontSource.Font);
+    }
+
+    private void ChangeFont(Texts arg, TMP_FontAsset font)
+    {
+        _textView.font = font;
     }
 
     private void PrintFullText(string text)
@@ -56,5 +70,6 @@ public class SergeantPanelMono : MonoBehaviour
     {
         _speechController.OnSayLineRequested -= PrintFullText;
         _speechController.OnSpeechLetterByLetterStarted -= StartPrintingSequence;
+        _fontSource.OnTextsChanged -= ChangeFont;
     }
 }

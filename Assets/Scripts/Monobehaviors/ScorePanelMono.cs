@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using TMPro;
 
-public class ScorePanelMono : MonoBehaviour
+using LanguagesAndTexts;
+
+public class ScorePanelMono : TextsOutputMono_Base
 {
     [SerializeField]
     private TextMeshProUGUI _scoreText;
 
     private ScoreController _controller;
-    
 
-    private void Start()
+    protected override void Initialize()
     {
         _controller = Main.Instance.ScoreController;
         _controller.OnScoreChanged += ChangeScoreText;
@@ -21,7 +22,12 @@ public class ScorePanelMono : MonoBehaviour
         _scoreText.text = score.ToString();
     }
 
-    private void OnDestroy()
+    protected override void SetTextValues(Texts texts, TMP_FontAsset font)
+    {
+        _scoreText.font = font;
+    }
+
+    protected override void OnGameobjectDestroyed()
     {
         _controller.OnScoreChanged -= ChangeScoreText;
     }

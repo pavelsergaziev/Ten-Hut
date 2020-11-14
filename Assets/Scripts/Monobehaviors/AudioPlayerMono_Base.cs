@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿//ВНИМАНИЕ!!! AudioSource.isPlaying обращается напрямую к аудиокарте.
+//Т.е. если по какой-то причине звука нет (звуковуха отвалилась), игра перестаёт работать.
+
+using System;
 using UnityEngine;
 
 public abstract class AudioPlayerMono_Base : MonoBehaviour, IUpdated

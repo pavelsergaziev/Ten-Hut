@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7077719874585317381}
   - component: {fileID: 7077719874585317378}
   - component: {fileID: 7077719874585317379}
+  - component: {fileID: 1786752248878654097}
   - component: {fileID: 7077719874585317380}
   - component: {fileID: 6248014889886448859}
   m_Layer: 5
@@ -39,7 +40,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 15, y: 15}
+  m_AnchoredPosition: {x: 55, y: 55}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &7077719874585317378
@@ -63,8 +64,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBarParent: {fileID: 7077719875406043855}
-  _healthBarElementPrefab: {fileID: 408685778972893246, guid: e5ddb6ae4e6830d429b021ba331b693f,
-    type: 3}
+--- !u!114 &1786752248878654097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7077719874585317382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdacaa8b279bb0b4585447e8105515ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _labelText: {fileID: 7077719876009164818}
 --- !u!114 &7077719874585317380
 MonoBehaviour:
   m_ObjectHideFlags: 0
